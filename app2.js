@@ -28,7 +28,7 @@ const renderChatInterface = function() {
                 <input type="button" value="Send" id="chat-submit" style="padding:10px;margin:10px">
             </div>
         `;
-        const ws=new WebSocket(`ws://127.0.0.1:8000/ws/ac-chat/${userGroup}/`)
+        const ws=new WebSocket(`wss://realtimechatapi.onrender.com/ws/ac-chat/${userGroup}/`)
         ws.onopen = function(){
             console.log('websocket connected...');
         }
