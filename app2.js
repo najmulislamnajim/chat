@@ -51,6 +51,7 @@ const renderChatInterface = function() {
             
             const messageDiv = document.getElementById('wsMessage');
             messageDiv.appendChild(messageElement);
+            messageDiv.scrollTop = messageDiv.scrollHeight;
         }
 
         ws.onerror = function(event){
