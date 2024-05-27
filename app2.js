@@ -7,7 +7,7 @@ const saveUserInfo = function() {
     const group = document.getElementById('userGroup').value;
     localStorage.setItem('userName', user);
     localStorage.setItem('userGroup', group);
-    renderChatInterface();
+    renderChatInterface(); 
 }
 
 const renderChatInterface = function() {
